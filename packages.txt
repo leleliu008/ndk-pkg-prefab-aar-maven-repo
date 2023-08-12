@@ -1,5 +1,6 @@
 basis_universal
 brotli
+bullet
 c-ares
 chinese-calendar
 cpu_features
