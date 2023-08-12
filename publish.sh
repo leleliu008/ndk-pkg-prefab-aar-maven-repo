@@ -18,7 +18,7 @@ do
     if [ -d "$HOME/.ndk-pkg/installed/$PACKAGE_XXXX/include" ] ; then
         PACKAGE_VERSION="$(ndk-pkg receipt "$PACKAGE_XXXX" version)"
 
-        if [ -d "com/fpliu/ndk/pkg/prefab/android/$TARGET_ANDROID_API/$PACKAGE_NAME/$PACKAGE_VERSION" ] ; then
+        if [ -d "large/com/fpliu/ndk/pkg/prefab/android/$TARGET_ANDROID_API/$PACKAGE_NAME/$PACKAGE_VERSION" ] ; then
             :
         else
             ndk-pkg deploy  "$PACKAGE_SPEC" --local=large
