@@ -1,0 +1,33 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.fpliu.ndk.pkg.prefab.android.21</groupId>
+    <artifactId>giflib</artifactId>
+    <version>5.2.1</version>
+    <packaging>aar</packaging>
+
+    <name>giflib</name>
+    <description>Library and utilities for processing GIFs</description>
+    <url>https://giflib.sourceforge.io</url>
+
+    <scm>
+        <connection>scm:git:https://git.code.sf.net/p/giflib/code</connection>
+        <developerConnection>scm:git:https://git.code.sf.net/p/giflib/code</developerConnection>
+        <url>https://git.code.sf.net/p/giflib/code</url>
+    </scm>
+
+    <developers>
+        <developer>
+            <name>Gershon Elber</name>
+            <email>gershon@cs.technion.sc.il</email>
+        </developer>
+        <developer>
+            <name>Toshio Kuratomi</name>
+            <email>toshio@tiki-lounge.com</email>
+        </developer>
+        <developer>
+            <name>Eric Raymond</name>
+            <email>esr@snark.thyrsus.com</email>
+        </developer>
+    </developers>
+</project>

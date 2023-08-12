@@ -13,6 +13,7 @@ fontconfig
 freetype2
 freetype2-with-harfbuzz
 geographiclib
+giflib
 googletest
 grpc
 harfbuzz
