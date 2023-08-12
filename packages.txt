@@ -35,6 +35,7 @@ libyaml
 libzstd
 mbedtls
 oboe
+openal-soft
 openssl
 opus
 pcre2

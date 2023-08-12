@@ -1,0 +1,32 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.fpliu.ndk.pkg.prefab.android.21</groupId>
+    <artifactId>openal-soft</artifactId>
+    <version>1.23.1</version>
+    <packaging>aar</packaging>
+
+    <name>openal-soft</name>
+    <description>Implementation of the OpenAL 3D audio API</description>
+    <url>https://openal-soft.org/</url>
+
+    <scm>
+        <connection>scm:git:https://github.com/kcat/openal-soft</connection>
+        <developerConnection>scm:git:https://github.com/kcat/openal-soft</developerConnection>
+        <url>https://github.com/kcat/openal-soft</url>
+    </scm>
+
+    <developers>
+        <developer>
+            <name>openal-soft developers</name>
+            <email>unknown</email>
+        </developer>
+    </developers>
+
+    <licenses>
+        <license>
+            <name>LGPL-2.0-or-later</name>
+            <url>https://raw.githubusercontent.com/spdx/license-list-data/master/text/LGPL-2.0-or-later.txt</url>
+        </license>
+    </licenses>
+</project>
