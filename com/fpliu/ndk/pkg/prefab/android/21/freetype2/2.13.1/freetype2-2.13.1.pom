@@ -1,0 +1,32 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.fpliu.ndk.pkg.prefab.android.21</groupId>
+    <artifactId>freetype2</artifactId>
+    <version>2.13.1</version>
+    <packaging>aar</packaging>
+
+    <name>freetype2</name>
+    <description>A C library to render fonts.</description>
+    <url>https://freetype.org/</url>
+
+    <scm>
+        <connection>scm:git:https://gitlab.freedesktop.org/freetype/freetype</connection>
+        <developerConnection>scm:git:https://gitlab.freedesktop.org/freetype/freetype</developerConnection>
+        <url>https://gitlab.freedesktop.org/freetype/freetype</url>
+    </scm>
+
+    <developers>
+        <developer>
+            <name>freetype2 developers</name>
+            <email>unknown</email>
+        </developer>
+    </developers>
+
+    <licenses>
+        <license>
+            <name>FTL</name>
+            <url>https://raw.githubusercontent.com/spdx/license-list-data/master/text/FTL.txt</url>
+        </license>
+    </licenses>
+</project>

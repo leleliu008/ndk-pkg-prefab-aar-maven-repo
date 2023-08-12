@@ -1,0 +1,36 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.fpliu.ndk.pkg.prefab.android.21</groupId>
+    <artifactId>libiconv</artifactId>
+    <version>1.17</version>
+    <packaging>aar</packaging>
+
+    <name>libiconv</name>
+    <description>charset conversion library</description>
+    <url>https://www.gnu.org/software/libiconv</url>
+
+    <scm>
+        <connection>scm:git:https://git.savannah.gnu.org/git/libiconv.git</connection>
+        <developerConnection>scm:git:https://git.savannah.gnu.org/git/libiconv.git</developerConnection>
+        <url>https://git.savannah.gnu.org/git/libiconv.git</url>
+    </scm>
+
+    <developers>
+        <developer>
+            <name>libiconv developers</name>
+            <email>unknown</email>
+        </developer>
+    </developers>
+
+    <licenses>
+        <license>
+            <name>GPL-3.0-or-later</name>
+            <url>https://raw.githubusercontent.com/spdx/license-list-data/master/text/GPL-3.0-or-later.txt</url>
+        </license>
+        <license>
+            <name>LGPL-2.0-or-later</name>
+            <url>https://raw.githubusercontent.com/spdx/license-list-data/master/text/LGPL-2.0-or-later.txt</url>
+        </license>
+    </licenses>
+</project>

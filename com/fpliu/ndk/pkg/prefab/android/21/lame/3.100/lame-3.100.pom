@@ -1,0 +1,26 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.fpliu.ndk.pkg.prefab.android.21</groupId>
+    <artifactId>lame</artifactId>
+    <version>3.100</version>
+    <packaging>aar</packaging>
+
+    <name>lame</name>
+    <description>High quality MPEG Audio Layer III (MP3) encoder</description>
+    <url>https://lame.sourceforge.io</url>
+
+    <developers>
+        <developer>
+            <name>lame developers</name>
+            <email>unknown</email>
+        </developer>
+    </developers>
+
+    <licenses>
+        <license>
+            <name>LGPL-2.0-or-later</name>
+            <url>https://raw.githubusercontent.com/spdx/license-list-data/master/text/LGPL-2.0-or-later.txt</url>
+        </license>
+    </licenses>
+</project>

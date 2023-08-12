@@ -1,0 +1,32 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.fpliu.ndk.pkg.prefab.android.21</groupId>
+    <artifactId>ixwebsocket</artifactId>
+    <version>11.3.2</version>
+    <packaging>aar</packaging>
+
+    <name>ixwebsocket</name>
+    <description>WebSocket client and server, and HTTP client command-line tool</description>
+    <url>https://github.com/machinezone/IXWebSocket</url>
+
+    <scm>
+        <connection>scm:git:https://github.com/machinezone/IXWebSocket</connection>
+        <developerConnection>scm:git:https://github.com/machinezone/IXWebSocket</developerConnection>
+        <url>https://github.com/machinezone/IXWebSocket</url>
+    </scm>
+
+    <developers>
+        <developer>
+            <name>ixwebsocket developers</name>
+            <email>unknown</email>
+        </developer>
+    </developers>
+
+    <licenses>
+        <license>
+            <name>BSD-3-Clause</name>
+            <url>https://raw.githubusercontent.com/spdx/license-list-data/master/text/BSD-3-Clause.txt</url>
+        </license>
+    </licenses>
+</project>

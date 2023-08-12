@@ -1,0 +1,32 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.fpliu.ndk.pkg.prefab.android.21</groupId>
+    <artifactId>sqlite</artifactId>
+    <version>3.42.0</version>
+    <packaging>aar</packaging>
+
+    <name>sqlite</name>
+    <description>command-line interface for SQLite</description>
+    <url>https://www.sqlite.org/</url>
+
+    <scm>
+        <connection>scm:git:https://github.com/sqlite/sqlite</connection>
+        <developerConnection>scm:git:https://github.com/sqlite/sqlite</developerConnection>
+        <url>https://github.com/sqlite/sqlite</url>
+    </scm>
+
+    <developers>
+        <developer>
+            <name>sqlite developers</name>
+            <email>unknown</email>
+        </developer>
+    </developers>
+
+    <licenses>
+        <license>
+            <name>blessing</name>
+            <url>https://raw.githubusercontent.com/spdx/license-list-data/master/text/blessing.txt</url>
+        </license>
+    </licenses>
+</project>

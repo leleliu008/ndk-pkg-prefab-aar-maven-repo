@@ -1,0 +1,32 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.fpliu.ndk.pkg.prefab.android.21</groupId>
+    <artifactId>openssl</artifactId>
+    <version>3.1.2</version>
+    <packaging>aar</packaging>
+
+    <name>openssl</name>
+    <description>Cryptography and SSL/TLS Toolkit</description>
+    <url>https://www.openssl.org/</url>
+
+    <scm>
+        <connection>scm:git:https://github.com/openssl/openssl</connection>
+        <developerConnection>scm:git:https://github.com/openssl/openssl</developerConnection>
+        <url>https://github.com/openssl/openssl</url>
+    </scm>
+
+    <developers>
+        <developer>
+            <name>openssl developers</name>
+            <email>unknown</email>
+        </developer>
+    </developers>
+
+    <licenses>
+        <license>
+            <name>Apache-2.0</name>
+            <url>https://raw.githubusercontent.com/spdx/license-list-data/master/text/Apache-2.0.txt</url>
+        </license>
+    </licenses>
+</project>

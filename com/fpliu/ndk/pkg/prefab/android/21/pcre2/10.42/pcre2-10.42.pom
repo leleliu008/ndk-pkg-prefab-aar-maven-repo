@@ -1,0 +1,32 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.fpliu.ndk.pkg.prefab.android.21</groupId>
+    <artifactId>pcre2</artifactId>
+    <version>10.42</version>
+    <packaging>aar</packaging>
+
+    <name>pcre2</name>
+    <description>Perl compatible regular expressions library with a new API</description>
+    <url>https://www.pcre.org/</url>
+
+    <scm>
+        <connection>scm:git:https://github.com/PCRE2Project/pcre2</connection>
+        <developerConnection>scm:git:https://github.com/PCRE2Project/pcre2</developerConnection>
+        <url>https://github.com/PCRE2Project/pcre2</url>
+    </scm>
+
+    <developers>
+        <developer>
+            <name>pcre2 developers</name>
+            <email>unknown</email>
+        </developer>
+    </developers>
+
+    <licenses>
+        <license>
+            <name>BSD-3-Clause</name>
+            <url>https://raw.githubusercontent.com/spdx/license-list-data/master/text/BSD-3-Clause.txt</url>
+        </license>
+    </licenses>
+</project>

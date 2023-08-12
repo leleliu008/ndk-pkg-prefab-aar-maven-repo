@@ -1,0 +1,32 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.fpliu.ndk.pkg.prefab.android.21</groupId>
+    <artifactId>libyaml</artifactId>
+    <version>0.2.5</version>
+    <packaging>aar</packaging>
+
+    <name>libyaml</name>
+    <description>YAML Parser</description>
+    <url>https://github.com/yaml/libyaml</url>
+
+    <scm>
+        <connection>scm:git:https://github.com/yaml/libyaml</connection>
+        <developerConnection>scm:git:https://github.com/yaml/libyaml</developerConnection>
+        <url>https://github.com/yaml/libyaml</url>
+    </scm>
+
+    <developers>
+        <developer>
+            <name>Kirill Simonov</name>
+            <email>xi@resolvent.net</email>
+        </developer>
+    </developers>
+
+    <licenses>
+        <license>
+            <name>MIT</name>
+            <url>https://raw.githubusercontent.com/spdx/license-list-data/master/text/MIT.txt</url>
+        </license>
+    </licenses>
+</project>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.fpliu.ndk.pkg.prefab.android.21</groupId>
+  <artifactId>geographiclib</artifactId>
+  <versioning>
+    <release>r2.2</release>
+    <versions>
+      <version>r2.2</version>
+    </versions>
+    <lastUpdated>20230812162430</lastUpdated>
+  </versioning>
+</metadata>

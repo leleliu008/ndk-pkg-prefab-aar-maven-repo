@@ -1,0 +1,32 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.fpliu.ndk.pkg.prefab.android.21</groupId>
+    <artifactId>json-c</artifactId>
+    <version>0.16</version>
+    <packaging>aar</packaging>
+
+    <name>json-c</name>
+    <description>JSON parser for C</description>
+    <url>https://github.com/json-c/json-c</url>
+
+    <scm>
+        <connection>scm:git:https://github.com/json-c/json-c</connection>
+        <developerConnection>scm:git:https://github.com/json-c/json-c</developerConnection>
+        <url>https://github.com/json-c/json-c</url>
+    </scm>
+
+    <developers>
+        <developer>
+            <name>json-c developers</name>
+            <email>unknown</email>
+        </developer>
+    </developers>
+
+    <licenses>
+        <license>
+            <name>MIT</name>
+            <url>https://raw.githubusercontent.com/spdx/license-list-data/master/text/MIT.txt</url>
+        </license>
+    </licenses>
+</project>

@@ -1,0 +1,32 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.fpliu.ndk.pkg.prefab.android.21</groupId>
+    <artifactId>poco</artifactId>
+    <version>1.12.4</version>
+    <packaging>aar</packaging>
+
+    <name>poco</name>
+    <description>C++ class libraries for building network and internet-based applications</description>
+    <url>https://pocoproject.org/</url>
+
+    <scm>
+        <connection>scm:git:https://github.com/pocoproject/poco</connection>
+        <developerConnection>scm:git:https://github.com/pocoproject/poco</developerConnection>
+        <url>https://github.com/pocoproject/poco</url>
+    </scm>
+
+    <developers>
+        <developer>
+            <name>poco developers</name>
+            <email>unknown</email>
+        </developer>
+    </developers>
+
+    <licenses>
+        <license>
+            <name>BSL-1.0</name>
+            <url>https://raw.githubusercontent.com/spdx/license-list-data/master/text/BSL-1.0.txt</url>
+        </license>
+    </licenses>
+</project>

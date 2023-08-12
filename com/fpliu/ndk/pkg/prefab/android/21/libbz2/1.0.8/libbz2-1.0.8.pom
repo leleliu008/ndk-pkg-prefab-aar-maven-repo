@@ -1,0 +1,32 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.fpliu.ndk.pkg.prefab.android.21</groupId>
+    <artifactId>libbz2</artifactId>
+    <version>1.0.8</version>
+    <packaging>aar</packaging>
+
+    <name>libbz2</name>
+    <description>Burrows–Wheeler-based data compression library with high compression ratio</description>
+    <url>https://sourceware.org/bzip2</url>
+
+    <scm>
+        <connection>scm:git:https://sourceware.org/git/bzip2</connection>
+        <developerConnection>scm:git:https://sourceware.org/git/bzip2</developerConnection>
+        <url>https://sourceware.org/git/bzip2</url>
+    </scm>
+
+    <developers>
+        <developer>
+            <name>libbz2 developers</name>
+            <email>unknown</email>
+        </developer>
+    </developers>
+
+    <licenses>
+        <license>
+            <name>bzip2-1.0.8</name>
+            <url>https://raw.githubusercontent.com/spdx/license-list-data/master/text/bzip2-1.0.8.txt</url>
+        </license>
+    </licenses>
+</project>

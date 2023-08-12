@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.fpliu.ndk.pkg.prefab.android.21</groupId>
+  <artifactId>flatbuffers</artifactId>
+  <versioning>
+    <release>23.5.26</release>
+    <versions>
+      <version>23.5.26</version>
+    </versions>
+    <lastUpdated>20230812154654</lastUpdated>
+  </versioning>
+</metadata>

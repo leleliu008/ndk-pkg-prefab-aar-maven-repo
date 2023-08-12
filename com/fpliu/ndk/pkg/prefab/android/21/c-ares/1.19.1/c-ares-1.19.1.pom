@@ -1,0 +1,25 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.fpliu.ndk.pkg.prefab.android.21</groupId>
+    <artifactId>c-ares</artifactId>
+    <version>1.19.1</version>
+    <packaging>aar</packaging>
+
+    <name>c-ares</name>
+    <description>Asynchronous DNS library</description>
+    <url>https://c-ares.haxx.se</url>
+
+    <scm>
+        <connection>scm:git:https://github.com/c-ares/c-ares</connection>
+        <developerConnection>scm:git:https://github.com/c-ares/c-ares</developerConnection>
+        <url>https://github.com/c-ares/c-ares</url>
+    </scm>
+
+    <developers>
+        <developer>
+            <name>c-ares developers</name>
+            <email>unknown</email>
+        </developer>
+    </developers>
+</project>

@@ -1,0 +1,32 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.fpliu.ndk.pkg.prefab.android.21</groupId>
+    <artifactId>harfbuzz</artifactId>
+    <version>8.1.1</version>
+    <packaging>aar</packaging>
+
+    <name>harfbuzz</name>
+    <description>a text shaping engine. It primarily supports OpenType, but also Apple Advanced Typography.</description>
+    <url>https://github.com/harfbuzz/harfbuzz</url>
+
+    <scm>
+        <connection>scm:git:https://github.com/harfbuzz/harfbuzz</connection>
+        <developerConnection>scm:git:https://github.com/harfbuzz/harfbuzz</developerConnection>
+        <url>https://github.com/harfbuzz/harfbuzz</url>
+    </scm>
+
+    <developers>
+        <developer>
+            <name>harfbuzz developers</name>
+            <email>unknown</email>
+        </developer>
+    </developers>
+
+    <licenses>
+        <license>
+            <name>MIT</name>
+            <url>https://raw.githubusercontent.com/spdx/license-list-data/master/text/MIT.txt</url>
+        </license>
+    </licenses>
+</project>

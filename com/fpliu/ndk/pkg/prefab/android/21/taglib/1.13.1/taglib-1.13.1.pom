@@ -1,0 +1,32 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.fpliu.ndk.pkg.prefab.android.21</groupId>
+    <artifactId>taglib</artifactId>
+    <version>1.13.1</version>
+    <packaging>aar</packaging>
+
+    <name>taglib</name>
+    <description>a library for reading and editing the metadata of several popular audio formats.</description>
+    <url>https://taglib.org/</url>
+
+    <scm>
+        <connection>scm:git:https://github.com/taglib/taglib</connection>
+        <developerConnection>scm:git:https://github.com/taglib/taglib</developerConnection>
+        <url>https://github.com/taglib/taglib</url>
+    </scm>
+
+    <developers>
+        <developer>
+            <name>taglib developers</name>
+            <email>unknown</email>
+        </developer>
+    </developers>
+
+    <licenses>
+        <license>
+            <name>LGPL-2.1-or-later</name>
+            <url>https://raw.githubusercontent.com/spdx/license-list-data/master/text/LGPL-2.1-or-later.txt</url>
+        </license>
+    </licenses>
+</project>

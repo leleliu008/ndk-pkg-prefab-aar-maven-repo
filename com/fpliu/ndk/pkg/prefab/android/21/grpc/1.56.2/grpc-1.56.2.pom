@@ -1,0 +1,32 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.fpliu.ndk.pkg.prefab.android.21</groupId>
+    <artifactId>grpc</artifactId>
+    <version>1.56.2</version>
+    <packaging>aar</packaging>
+
+    <name>grpc</name>
+    <description>Next generation open source RPC library and framework</description>
+    <url>https://grpc.io</url>
+
+    <scm>
+        <connection>scm:git:https://github.com/grpc/grpc</connection>
+        <developerConnection>scm:git:https://github.com/grpc/grpc</developerConnection>
+        <url>https://github.com/grpc/grpc</url>
+    </scm>
+
+    <developers>
+        <developer>
+            <name>grpc developers</name>
+            <email>unknown</email>
+        </developer>
+    </developers>
+
+    <licenses>
+        <license>
+            <name>Apache-2.0</name>
+            <url>https://raw.githubusercontent.com/spdx/license-list-data/master/text/Apache-2.0.txt</url>
+        </license>
+    </licenses>
+</project>

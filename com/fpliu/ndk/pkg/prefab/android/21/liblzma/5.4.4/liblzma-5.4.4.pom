@@ -1,0 +1,32 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.fpliu.ndk.pkg.prefab.android.21</groupId>
+    <artifactId>liblzma</artifactId>
+    <version>5.4.4</version>
+    <packaging>aar</packaging>
+
+    <name>liblzma</name>
+    <description>General-purpose data compression with high compression ratio</description>
+    <url>https://tukaani.org/xz</url>
+
+    <scm>
+        <connection>scm:git:https://github.com/xz-mirror/xz</connection>
+        <developerConnection>scm:git:https://github.com/xz-mirror/xz</developerConnection>
+        <url>https://github.com/xz-mirror/xz</url>
+    </scm>
+
+    <developers>
+        <developer>
+            <name>liblzma developers</name>
+            <email>unknown</email>
+        </developer>
+    </developers>
+
+    <licenses>
+        <license>
+            <name>LGPL-2.1-or-later</name>
+            <url>https://raw.githubusercontent.com/spdx/license-list-data/master/text/LGPL-2.1-or-later.txt</url>
+        </license>
+    </licenses>
+</project>
