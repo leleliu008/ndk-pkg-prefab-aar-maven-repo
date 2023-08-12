@@ -1,5 +1,5 @@
 # ndk-pkg-prefab-aar-maven-repo
-A Maven Repository for the commonly used google prefab AARs that was created by [ndk-pkg](https://github.com/leleliu008/ndk-pkg)
+A Maven Repository for the commonly used google prefab AARs that were created by [ndk-pkg](https://github.com/leleliu008/ndk-pkg)
 
 ## configure with Android Gradle Plugin Kotlin DSL
 
@@ -27,9 +27,7 @@ allprojects {
 
 **step3. add dependencies in build.gradle.kts**
 
-Every package's coordinate for Gradle is `com.fpliu.ndk.pkg.prefab.android.21:<PACKAGE-NAME>:<PACKAGE-VERSION>`
-
-For example, `libpng` package has a version `1.6.37`, we could use it as follows:
+Every package's coordinate for Gradle is `com.fpliu.ndk.pkg.prefab.android.21:<PACKAGE-NAME>:<PACKAGE-VERSION>`, for example, `libpng` package has a version `1.6.37`, we could use it as follows:
 
 ```gradle
 dependencies {
@@ -102,9 +100,7 @@ allprojects {
 
 **step3. add dependencies in build.gradle**
 
-Every package's coordinate for Gradle is `com.fpliu.ndk.pkg.prefab.android.21:<PACKAGE-NAME>:<PACKAGE-VERSION>`
-
-For example, `libpng` package has a version `1.6.37`, we could use it as follows:
+Every package's coordinate for Gradle is `com.fpliu.ndk.pkg.prefab.android.21:<PACKAGE-NAME>:<PACKAGE-VERSION>`, for example, `libpng` package has a version `1.6.37`, we could use it as follows:
 
 ```gradle
 dependencies {
