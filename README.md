@@ -25,6 +25,18 @@ allprojects {
 }
 ```
 
+中国大陆的用户可使用如下配置：
+
+```gradle
+allprojects {
+    repositories {
+        maven {
+            url = uri("https://ghproxy.com/https://raw.githubusercontent.com/leleliu008/ndk-pkg-prefab-aar-maven-repo/master")
+        }
+    }
+}
+```
+
 **step3. add dependencies in build.gradle.kts**
 
 Every package's coordinate for Gradle is `com.fpliu.ndk.pkg.prefab.android.21:<PACKAGE-NAME>:<PACKAGE-VERSION>`, for example, `libpng` package has a version `1.6.37`, we could use it as follows:
@@ -98,6 +110,18 @@ allprojects {
 }
 ```
 
+中国大陆的用户可使用如下配置：
+
+```gradle
+allprojects {
+    repositories {
+        maven {
+            url 'https://ghproxy.com/https://raw.githubusercontent.com/leleliu008/ndk-pkg-prefab-aar-maven-repo/master'
+        }
+    }
+}
+```
+
 **step3. add dependencies in build.gradle**
 
 Every package's coordinate for Gradle is `com.fpliu.ndk.pkg.prefab.android.21:<PACKAGE-NAME>:<PACKAGE-VERSION>`, for example, `libpng` package has a version `1.6.37`, we could use it as follows:
@@ -161,3 +185,7 @@ android {
 If you have any advice, please let me know.
 
 I will keep on publishing more packages to this repository.
+
+## Note
+
+Some packages are very huge, I don't put them into this repo, but I published as GitHub Releases, if you need them, please go to <https://github.com/leleliu008/ndk-pkg-prefab-aar-maven-repo/releases> to download it then uncompress it to your Maven Local Repository.
