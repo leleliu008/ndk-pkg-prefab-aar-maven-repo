@@ -91,7 +91,7 @@ android {
 }
 ```
 
-**Caveats:** If you link a shared library that depends on `libc++_shared.so`, then your Android app should use `libc++_shared.so` too.
+**Caveat:** If you link a shared library that depends on `libc++_shared.so`, then your Android app should use `libc++_shared.so` too.
 
 ## configure with Android Gradle Plugin Groovy DSL
 
@@ -183,11 +183,11 @@ android {
 }
 ```
 
-**Caveats:** If you link a shared library that depends on `libc++_shared.so`, then your Android app should use `libc++_shared.so` too.
+**Caveat:** If you link a shared library that depends on `libc++_shared.so`, then your Android app should use `libc++_shared.so` too.
 
 ## References
 
-- <https://github.com/google/prefab>
+- <https://google.github.io/prefab/>
 - <https://developer.android.com/studio/build/dependencies?agpversion=4.1#using-native-dependencies>
 
 ## Examples
