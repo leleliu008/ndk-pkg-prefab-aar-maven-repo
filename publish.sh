@@ -28,7 +28,7 @@ do
     fi
 done
 
-VERSION="$(date +%Y.%m.%d.%H.%M)"
+VERSION="$(date -u +%Y.%m.%d.%H.%M)"
 
 BUNDLE_DIR_NAME="ndk-pkg-prefab-aar-maven-local-repo-bundle-$VERSION"
 

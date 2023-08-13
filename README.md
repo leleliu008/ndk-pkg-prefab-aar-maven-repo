@@ -49,7 +49,14 @@ dependencies {
 
 **step4. invoke [find_package(PACKAGE-NAME [REQUIRED] CONFIG)](https://cmake.org/cmake/help/latest/command/find_package.html) command in your Android project's CMakeLists.txt**
 
-Every package provides several cmake imported targets and each target has form: `<PACKAGE-NAME>::<LIBRARY-FILENAME>`
+Every package provides several cmake imported targets:
+
+|TARGET-NAME|example|summary|
+|-|-|-|
+|`<PACKAGE-NAME>::headers`|`libpng::headers`|C/C++ header files only|
+|`<PACKAGE-NAME>::lib*.a`|`libpng::libpng16.a`|static library|
+|`<PACKAGE-NAME>::lib*.so`|`libpng::libpng16.so`|shared library|
+|`<PACKAGE-NAME>::*`|`libpng::libpng`|base on .pc files|
 
 Following is a piece of codes show you how to link `libpng.a` which is provided by `libpng` package:
 
@@ -134,7 +141,14 @@ dependencies {
 
 **step4. invoke [find_package(PACKAGE-NAME [REQUIRED] CONFIG)](https://cmake.org/cmake/help/latest/command/find_package.html) command in your Android project's CMakeLists.txt**
 
-Every package provides several cmake imported targets and each target has form: `<PACKAGE-NAME>::<LIBRARY-FILENAME>`
+Every package provides several cmake imported targets:
+
+|TARGET-NAME|example|summary|
+|-|-|-|
+|`<PACKAGE-NAME>::headers`|`libpng::headers`|C/C++ header files only|
+|`<PACKAGE-NAME>::lib*.a`|`libpng::libpng16.a`|static library|
+|`<PACKAGE-NAME>::lib*.so`|`libpng::libpng16.so`|shared library|
+|`<PACKAGE-NAME>::*`|`libpng::libpng`|base on .pc files|
 
 Following is a piece of codes show you how to link `libpng.a` which is provided by `libpng` package:
 
