@@ -1,0 +1,25 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.fpliu.ndk.pkg.prefab.android.21</groupId>
+    <artifactId>libtiff</artifactId>
+    <version>4.5.1</version>
+    <packaging>aar</packaging>
+
+    <name>libtiff</name>
+    <description>TIFF library and utilities</description>
+    <url>https://libtiff.gitlab.io/libtiff</url>
+
+    <scm>
+        <connection>scm:git:https://gitlab.com/libtiff/libtiff</connection>
+        <developerConnection>scm:git:https://gitlab.com/libtiff/libtiff</developerConnection>
+        <url>https://gitlab.com/libtiff/libtiff</url>
+    </scm>
+
+    <developers>
+        <developer>
+            <name>libtiff developers</name>
+            <email>unknown</email>
+        </developer>
+    </developers>
+</project>

@@ -32,6 +32,7 @@ libnghttp2
 libphonenumber
 libpng
 libsodium
+libtiff
 libxml2
 libyaml
 libzstd
