@@ -1,0 +1,77 @@
+name: publish releases
+
+on:
+  workflow_dispatch:
+
+jobs:
+  publish:
+
+    runs-on: ubuntu-latest
+
+    container: fpliu/ndk-pkg
+
+    env:
+      GH_TOKEN: ${{ github.token }}
+
+    steps:
+      - run: ndk-pkg env
+      - run: ndk-pkg setup
+      - run: ndk-pkg sysinfo
+      - run: ndk-pkg update
+      - run: |
+          set -ex
+
+          # to avaid: failed to run git: fatal: not a git repository (or any of the parent directories): .git
+          git -c init.defaultBranch=master init
+          git remote add origin ${{ github.repositoryUrl }}
+
+          UTS="$(date -u +%Y.%m.%d.%H.%M)"
+
+          TARGET_ANDROID_ABIS='arm64-v8a,armeabi-v7a,x86_64,x86'
+          TARGET_ANDROID_API='21'
+
+          for PACKAGE_NAME in abseil boost icu4c libphonenumber libprotobuf pjsip ffmpeg
+          do
+              PACKAGE_SPEC="$PACKAGE_NAME:android-$TARGET_ANDROID_API:$TARGET_ANDROID_ABIS"
+
+              ndk-pkg install "$PACKAGE_SPEC"
+
+              PACKAGE_XXXX="$PACKAGE_NAME:android-$TARGET_ANDROID_API:${TARGET_ANDROID_ABIS%%,*}"
+
+              if [ -d "$HOME/.ndk-pkg/installed/$PACKAGE_XXXX/include" ] ; then
+                  PACKAGE_VERSION="$(ndk-pkg receipt "$PACKAGE_XXXX" version)"
+
+                  MAVEN_LOCAL_PATH="$UTS-com-fpliu-ndk-pkg-prefab-android-$TARGET_ANDROID_API-$PACKAGE_NAME-$PACKAGE_VERSION"
+
+                  if [ -d "$MAVEN_LOCAL_PATH/com/fpliu/ndk/pkg/prefab/android/$TARGET_ANDROID_API/$PACKAGE_NAME/$PACKAGE_VERSION" ] ; then
+                      :
+                  else
+                      ndk-pkg deploy  "$PACKAGE_SPEC" --local="$MAVEN_LOCAL_PATH"
+
+                      BUNDLE_FILENAME="$MAVEN_LOCAL_PATH.tar.xz"
+
+                      tar cJvf "$BUNDLE_FILENAME" "$MAVEN_LOCAL_PATH"
+                  fi
+              else
+                  printf '%s\n' "no dev files in $PACKAGE_XXXX"
+              fi
+          done
+
+          sha256sum *.tar.xz > sha256sum.txt
+
+          cat >> notes.md <<EOF
+          ## sha256sum
+
+          \`\`\`
+          $(cat sha256sum.txt)
+          \`\`\`
+
+          ## how to use
+
+          \`\`\`bash
+          curl -LO https://github.com/leleliu008/ndk-pkg-prefab-aar-maven-repo/releases/download/$UTS/<filename>
+          tar vxf <filename> --strip-components=1 -C ~/.m2/repository
+          \`\`\`
+          EOF
+
+          gh release create "$UTS" *.tar.xz sha256sum.txt --title "$UTS" --notes-file notes.md

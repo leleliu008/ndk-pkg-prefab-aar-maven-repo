@@ -2,6 +2,8 @@
 
 set -ex
 
+UTS="$(date -u +%Y.%m.%d.%H.%M)"
+
 TARGET_ANDROID_ABIS='arm64-v8a,armeabi-v7a,x86_64,x86'
 TARGET_ANDROID_API='21'
 
@@ -18,47 +20,37 @@ do
     if [ -d "$HOME/.ndk-pkg/installed/$PACKAGE_XXXX/include" ] ; then
         PACKAGE_VERSION="$(ndk-pkg receipt "$PACKAGE_XXXX" version)"
 
-        if [ -d "large/com/fpliu/ndk/pkg/prefab/android/$TARGET_ANDROID_API/$PACKAGE_NAME/$PACKAGE_VERSION" ] ; then
+        MAVEN_LOCAL_PATH="$UTS-com-fpliu-ndk-pkg-prefab-android-$TARGET_ANDROID_API-$PACKAGE_NAME-$PACKAGE_VERSION"
+
+        if [ -d "$MAVEN_LOCAL_PATH/com/fpliu/ndk/pkg/prefab/android/$TARGET_ANDROID_API/$PACKAGE_NAME/$PACKAGE_VERSION" ] ; then
             :
         else
-            ndk-pkg deploy  "$PACKAGE_SPEC" --local=large
+            ndk-pkg deploy  "$PACKAGE_SPEC" --local="$MAVEN_LOCAL_PATH"
+
+            BUNDLE_FILENAME="$MAVEN_LOCAL_PATH.tar.xz"
+
+            tar cJvf "$BUNDLE_FILENAME" "$MAVEN_LOCAL_PATH"
         fi
     else
         printf '%s\n' "no dev files in $PACKAGE_XXXX"
     fi
 done
 
-VERSION="$(date -u +%Y.%m.%d.%H.%M)"
-
-BUNDLE_DIR_NAME="ndk-pkg-prefab-aar-maven-local-repo-bundle-$VERSION"
-
-mv large "$BUNDLE_DIR_NAME"
-
-BUNDLE_FILENAME="$BUNDLE_DIR_NAME.tar.xz"
-
-tar cJvf "$BUNDLE_FILENAME" "$BUNDLE_DIR_NAME"
-
-BUNDLE_FILE_SHA256="$(sha256sum "$BUNDLE_FILENAME")"
+sha256sum *.tar.xz > sha256sum.txt
 
 cat > notes.md <<EOF
-## bundle contains packages:
+## sha256sum
 
 \`\`\`
-$PACKAGE_NAMES
-\`\`\`
-
-## bundle sha256sum:
-
-\`\`\`
-$BUNDLE_FILE_SHA256
+$(cat sha256sum.txt)
 \`\`\`
 
 ## how to use
 
 \`\`\`bash
-curl -LO https://github.com/leleliu008/ndk-pkg-prefab-aar-maven-repo/releases/download/$VERSION/$BUNDLE_FILENAME
-tar vxf $BUNDLE_FILENAME --strip-components=1 -C ~/.m2/repository
+curl -LO https://github.com/leleliu008/ndk-pkg-prefab-aar-maven-repo/releases/download/$UTS/<filename>
+tar vxf <filename> --strip-components=1 -C ~/.m2/repository
 \`\`\`
 EOF
 
-gh release create "$VERSION" "$BUNDLE_FILENAME" --title "$VERSION" --notes-file notes.md
+gh release create "$UTS" *.tar.xz sha256sum.txt --title "$UTS" --notes-file notes.md

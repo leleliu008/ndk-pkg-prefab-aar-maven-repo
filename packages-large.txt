@@ -1,5 +1,7 @@
 abseil
 boost
 icu4c
+libphonenumber
 libprotobuf
 pjsip
+ffmpeg
