@@ -36,13 +36,13 @@ do
     fi
 done
 
-sha256sum *.tar.xz > sha256sum.txt
+sha256sum *.tar.xz > sha256sums.txt
 
 cat > notes.md <<EOF
 ## sha256sum
 
 \`\`\`
-$(cat sha256sum.txt)
+$(cat sha256sums.txt)
 \`\`\`
 
 ## how to use
@@ -53,4 +53,4 @@ tar vxf <filename> --strip-components=1 -C ~/.m2/repository
 \`\`\`
 EOF
 
-gh release create "$UTS" *.tar.xz sha256sum.txt --title "$UTS" --notes-file notes.md
+gh release create "$UTS" *.tar.xz sha256sums.txt --title "$UTS" --notes-file notes.md
