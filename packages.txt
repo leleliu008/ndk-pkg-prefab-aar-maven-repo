@@ -3,6 +3,7 @@ brotli
 bullet
 c-ares
 chinese-calendar
+cpprestsdk
 cpu_features
 cpuinfo
 dav1d
