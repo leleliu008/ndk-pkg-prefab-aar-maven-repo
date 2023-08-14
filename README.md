@@ -200,12 +200,12 @@ android {
 - <https://github.com/leleliu008/ndk-pkg-prefab-example-ffmpeg>
 - <https://github.com/leleliu008/ndk-pkg-prefab-example-libphonenumber>
 
+## Note
+
+Some aar files are very huge (over 100MB), I don't put them into this repo, but published them as GitHub Releases, if you need them, please go to <https://github.com/leleliu008/ndk-pkg-prefab-aar-maven-repo/releases> to download them then uncompress them to your Maven Local Repository.
+
 ## More
 
 If you have any advice, please let me know.
 
 I will keep on publishing more packages to this repository.
-
-## Note
-
-Some aar files are very huge (over 100MB), I don't put them into this repo, but published them as GitHub Releases, if you need them, please go to <https://github.com/leleliu008/ndk-pkg-prefab-aar-maven-repo/releases> to download it then uncompress it to your Maven Local Repository.
