@@ -76,8 +76,6 @@ endif()
 
 **step5. configure C++ standard and STL in build.gradle.kts**
 
-This step is only required for packages that use `libc++`.
-
 ```gradle
 android {
     defaultConfig {
@@ -91,7 +89,10 @@ android {
 }
 ```
 
-**Caveat:** If you link a shared library that depends on `libc++_shared.so`, then your Android app should use `libc++_shared.so` too.
+**Note:**
+
+- This step is only required for packages that use `libc++`.
+- If you link a shared library that depends on `libc++_shared.so`, then your Android app should use `libc++_shared.so` too.
 
 ## configure with Android Gradle Plugin Groovy DSL
 
@@ -183,16 +184,21 @@ android {
 }
 ```
 
-**Caveat:** If you link a shared library that depends on `libc++_shared.so`, then your Android app should use `libc++_shared.so` too.
+**Note:**
+
+- This step is only required for packages that use `libc++`.
+- If you link a shared library that depends on `libc++_shared.so`, then your Android app should use `libc++_shared.so` too.
 
 ## References
 
 - <https://google.github.io/prefab/>
+- <https://developer.android.com/studio/projects/android-library#aar-contents>
 - <https://developer.android.com/studio/build/dependencies?agpversion=4.1#using-native-dependencies>
 
 ## Examples
 
-- <https://github.com/leleliu008/android-calendar-for-the-aged>
+- <https://github.com/leleliu008/ndk-pkg-prefab-example-ffmpeg>
+- <https://github.com/leleliu008/ndk-pkg-prefab-example-libphonenumber>
 
 ## More
 
@@ -202,4 +208,4 @@ I will keep on publishing more packages to this repository.
 
 ## Note
 
-Some packages are very huge, I don't put them into this repo, but I published as GitHub Releases, if you need them, please go to <https://github.com/leleliu008/ndk-pkg-prefab-aar-maven-repo/releases> to download it then uncompress it to your Maven Local Repository.
+Some aar files are very huge (over 100MB), I don't put them into this repo, but published them as GitHub Releases, if you need them, please go to <https://github.com/leleliu008/ndk-pkg-prefab-aar-maven-repo/releases> to download it then uncompress it to your Maven Local Repository.
