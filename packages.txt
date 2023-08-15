@@ -47,6 +47,7 @@ poco
 pthreadpool
 re2
 ruy
+sdl2
 sqlite
 taglib
 xnnpack
